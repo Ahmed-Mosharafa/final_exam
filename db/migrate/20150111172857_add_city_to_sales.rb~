@@ -1,0 +1,4 @@
+class AddCityToSales < ActiveRecord::Migration
+  def change
+  end
+end

@@ -1,0 +1,18 @@
+Background: sales in database
+ 
+  Given the following sales exist:
+CITY  = ["Cairo", "Alex", "Mansoura", "Aswan"]
+GOOD  = [["Mouse", 10],  ["Screen", 700], ["CPU", 4000], ["Keybaord",150], ["Iphone 6",6000], ["Galaxy S5", 5000]]
+DATE  = ["2015-1-1", "2015-1-7", "2015-1-9"]
+
+  | good     | price | date       | city    |
+  | Mouse    | 10    | "2015-1-1" | Cairo   |
+  | Screen   | 700   | "2015-1-7" | Alex    |
+  | CPU      | 4000  | "2015-1-9" | Aswan   |
+  | Keybaord | 150   | "2015-1-7" | Mansoura|
+ 
+Scenario: add director to existing movie
+  When I go to the edit page for "Alien"
+  And  I fill in "Director" with "Ridley Scott"
+  And  I press "Update Movie Info"
+  Then the director of "Alien" should be "Ridley Scott"

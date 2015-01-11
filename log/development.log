@@ -1,0 +1,2893 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (352.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (432.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (4.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSales (20150111171538)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "good" varchar(255), "price" integer, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20150111171538')[0m
+  [1m[35m (498.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (3.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (666.6ms)[0m  [1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "good" varchar(255), "price" integer, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (530.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (532.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (520.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150111171538')[0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSales (20150111171538)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (5.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (389.9ms)[0m  [1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "good" varchar(255), "price" integer, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (432.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (432.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (432.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150111171538')[0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSales (20150111171538)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSales (20150111171538)
+Migrating to AddCityToSales (20150111172857)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  ALTER TABLE "sales" ADD "city" varchar(255)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20150111172857')[0m
+  [1m[35m (393.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSales (20150111171538)
+Migrating to AddCityToSales (20150111172857)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (548.6ms)[0m  [1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "good" varchar(255), "price" integer, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "city" varchar(255)) [0m
+  [1m[35m (533.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (499.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (488.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150111172857')[0m
+  [1m[35m (499.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150111171538')
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (11.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:38 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:38 UTC +00:00]]
+  [1m[35m (632.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:39 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:08:39 UTC +00:00]]
+  [1m[36m (620.7ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:39 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:39 UTC +00:00]]
+  [1m[35m (532.3ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:40 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:40 UTC +00:00]]
+  [1m[36m (759.3ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:41 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:41 UTC +00:00]]
+  [1m[35m (522.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:41 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:41 UTC +00:00]]
+  [1m[36m (707.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:42 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:08:42 UTC +00:00]]
+  [1m[35m (626.6ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:42 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:42 UTC +00:00]]
+  [1m[36m (555.2ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:43 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:43 UTC +00:00]]
+  [1m[35m (634.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:44 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:44 UTC +00:00]]
+  [1m[36m (587.9ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:44 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:08:44 UTC +00:00]]
+  [1m[35m (599.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:45 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:45 UTC +00:00]]
+  [1m[36m (508.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:45 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:08:45 UTC +00:00]]
+  [1m[35m (718.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:46 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:46 UTC +00:00]]
+  [1m[36m (741.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:47 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:47 UTC +00:00]]
+  [1m[35m (597.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:47 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:47 UTC +00:00]]
+  [1m[36m (631.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:48 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:48 UTC +00:00]]
+  [1m[35m (456.3ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:48 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:08:48 UTC +00:00]]
+  [1m[36m (678.3ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:49 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:49 UTC +00:00]]
+  [1m[35m (675.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:50 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:50 UTC +00:00]]
+  [1m[36m (519.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:50 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:08:50 UTC +00:00]]
+  [1m[35m (587.3ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:51 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:51 UTC +00:00]]
+  [1m[36m (561.1ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:52 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:52 UTC +00:00]]
+  [1m[35m (530.8ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:52 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:52 UTC +00:00]]
+  [1m[36m (686.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:53 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:53 UTC +00:00]]
+  [1m[35m (575.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:08:53 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:08:53 UTC +00:00]]
+  [1m[36m (486.0ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:54 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:54 UTC +00:00]]
+  [1m[35m (719.7ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:55 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:08:55 UTC +00:00]]
+  [1m[36m (509.2ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:55 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:55 UTC +00:00]]
+  [1m[35m (563.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:56 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:08:56 UTC +00:00]]
+  [1m[36m (564.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:56 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:56 UTC +00:00]]
+  [1m[35m (581.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:08:57 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:08:57 UTC +00:00]]
+  [1m[36m (587.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:57 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:57 UTC +00:00]]
+  [1m[35m (632.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:08:58 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:08:58 UTC +00:00]]
+  [1m[36m (586.8ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:59 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:08:59 UTC +00:00]]
+  [1m[35m (586.7ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:08:59 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:08:59 UTC +00:00]]
+  [1m[36m (551.7ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:00 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:00 UTC +00:00]]
+  [1m[35m (609.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:00 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:00 UTC +00:00]]
+  [1m[36m (464.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:01 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:01 UTC +00:00]]
+  [1m[35m (544.3ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:01 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:01 UTC +00:00]]
+  [1m[36m (550.2ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:02 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:02 UTC +00:00]]
+  [1m[35m (555.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:02 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:02 UTC +00:00]]
+  [1m[36m (599.3ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:03 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:03 UTC +00:00]]
+  [1m[35m (566.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:04 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:04 UTC +00:00]]
+  [1m[36m (631.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:04 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:04 UTC +00:00]]
+  [1m[35m (589.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:05 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:05 UTC +00:00]]
+  [1m[36m (664.8ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:06 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:06 UTC +00:00]]
+  [1m[35m (687.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:06 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:06 UTC +00:00]]
+  [1m[36m (588.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:07 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:07 UTC +00:00]]
+  [1m[35m (586.8ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:07 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:07 UTC +00:00]]
+  [1m[36m (642.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:08 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:08 UTC +00:00]]
+  [1m[35m (510.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:09 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:09 UTC +00:00]]
+  [1m[36m (730.9ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:09 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:09 UTC +00:00]]
+  [1m[35m (640.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:10 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:10 UTC +00:00]]
+  [1m[36m (606.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:11 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:11 UTC +00:00]]
+  [1m[35m (576.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:11 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:11 UTC +00:00]]
+  [1m[36m (649.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:12 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:12 UTC +00:00]]
+  [1m[35m (695.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:13 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:13 UTC +00:00]]
+  [1m[36m (610.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:13 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:13 UTC +00:00]]
+  [1m[35m (597.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:14 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:14 UTC +00:00]]
+  [1m[36m (654.3ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:14 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:14 UTC +00:00]]
+  [1m[35m (471.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:15 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:15 UTC +00:00]]
+  [1m[36m (512.0ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:15 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:15 UTC +00:00]]
+  [1m[35m (498.4ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:16 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:16 UTC +00:00]]
+  [1m[36m (515.2ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:16 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:16 UTC +00:00]]
+  [1m[35m (556.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:17 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:17 UTC +00:00]]
+  [1m[36m (564.8ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:18 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:18 UTC +00:00]]
+  [1m[35m (554.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:18 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:18 UTC +00:00]]
+  [1m[36m (524.3ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:19 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:19 UTC +00:00]]
+  [1m[35m (594.7ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:19 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:19 UTC +00:00]]
+  [1m[36m (463.9ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:20 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:20 UTC +00:00]]
+  [1m[35m (554.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:20 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:20 UTC +00:00]]
+  [1m[36m (537.1ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:21 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:21 UTC +00:00]]
+  [1m[35m (508.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:21 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:21 UTC +00:00]]
+  [1m[36m (598.1ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:22 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:22 UTC +00:00]]
+  [1m[35m (486.3ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:22 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:22 UTC +00:00]]
+  [1m[36m (752.8ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:23 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:23 UTC +00:00]]
+  [1m[35m (812.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:24 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:24 UTC +00:00]]
+  [1m[36m (1404.0ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:25 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:25 UTC +00:00]]
+  [1m[35m (481.5ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:26 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:26 UTC +00:00]]
+  [1m[36m (575.1ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:26 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:26 UTC +00:00]]
+  [1m[35m (586.8ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:27 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:27 UTC +00:00]]
+  [1m[36m (484.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:28 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:28 UTC +00:00]]
+  [1m[35m (475.4ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:28 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:28 UTC +00:00]]
+  [1m[36m (541.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:29 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:29 UTC +00:00]]
+  [1m[35m (486.2ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:29 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:29 UTC +00:00]]
+  [1m[36m (513.6ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:30 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:30 UTC +00:00]]
+  [1m[35m (519.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:30 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 18:09:30 UTC +00:00]]
+  [1m[36m (519.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:31 UTC +00:00], ["date", Wed, 07 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:31 UTC +00:00]]
+  [1m[35m (709.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:31 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:31 UTC +00:00]]
+  [1m[36m (553.1ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:32 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:32 UTC +00:00]]
+  [1m[35m (507.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:32 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:32 UTC +00:00]]
+  [1m[36m (544.5ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (1.3ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:33 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:33 UTC +00:00]]
+  [1m[35m (655.0ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:34 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 18:09:34 UTC +00:00]]
+  [1m[36m (708.9ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:34 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:34 UTC +00:00]]
+  [1m[35m (508.7ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 18:09:35 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 18:09:35 UTC +00:00]]
+  [1m[36m (552.9ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:35 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:35 UTC +00:00]]
+  [1m[35m (497.9ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 18:09:36 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 18:09:36 UTC +00:00]]
+  [1m[36m (542.4ms)[0m  [1mcommit transaction[0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 18:09:36 UTC +00:00], ["date", Fri, 09 Jan 2015], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 18:09:36 UTC +00:00]]
+  [1m[35m (490.1ms)[0m  commit transaction
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 18:09:37 UTC +00:00], ["date", Thu, 01 Jan 2015], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 18:09:37 UTC +00:00]]
+  [1m[36m (455.6ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/Sale" for 127.0.0.1 at 2015-01-11 14:42:38 -0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/Sale"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-01-11 14:42:47 -0400
+Served asset /rails.png - 200 OK (26ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:43:15 -0400
+
+SyntaxError (/home/saasbook/final/app/controllers/sales_controller.rb:6: syntax error, unexpected ')', expecting ']'):
+  activesupport (3.2.16) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.16) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.16) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.16) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.16) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__733596386__call__229843385__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.2ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:44:38 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (1.0ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (163.5ms)
+Completed 500 Internal Server Error in 249.3ms
+
+ActionView::Template::Error (undefined local variable or method `‘Aswan’' for #<#<Class:0xa19652c>:0xa194380>):
+    2: 
+    3: <%= form_tag sales_path, :id => 'Filter_form', :method => :get do %>
+    4:   Include:
+    5:   <% [‘Aswan’, ‘Alex’, ‘Cairo’, ‘Mansoura’].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag "ratings[#{city}]", 1, if params[:city]; params[:city].include?(city); else; true; end, :id => "cities_#{city}" %>
+    8:   <% end %>
+  app/views/sales/index.html.erb:5:in `block in _app_views_sales_index_html_erb___178385288_84711920'
+  app/views/sales/index.html.erb:3:in `_app_views_sales_index_html_erb___178385288_84711920'
+  app/controllers/sales_controller.rb:10:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:47:41 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (1.5ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (145.0ms)
+Warning. Error encountered while saving cache /home/saasbook/final/tmp/cache/sass/3e12c3cb6c0be0625e2df0f1e5809c40352ebf24/sales.css.scssc: can't dump anonymous class #<Class:0x9ad2600>
+Compiled sales.css  (102ms)  (pid 3202)
+Warning. Error encountered while saving cache /home/saasbook/final/tmp/cache/sass/3e12c3cb6c0be0625e2df0f1e5809c40352ebf24/scaffolds.css.scssc: can't dump anonymous class #<Class:0x9ad2600>
+Compiled scaffolds.css  (10ms)  (pid 3202)
+Compiled application.css  (136ms)  (pid 3202)
+Compiled jquery.js  (14ms)  (pid 3202)
+Compiled jquery_ujs.js  (0ms)  (pid 3202)
+Compiled sales.js  (865ms)  (pid 3202)
+Compiled application.js  (1012ms)  (pid 3202)
+Completed 200 OK in 1494.5ms (Views: 1475.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /application.css - 200 OK (41ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /sales.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /jquery.js - 200 OK (15ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /sales.js - 200 OK (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:43 -0400
+Served asset /application.js - 200 OK (20ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&ratings%5BAlex%5D=1&ratings%5BCairo%5D=1&ratings%5BMansoura%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:47:48 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"Alex"=>"1", "Cairo"=>"1", "Mansoura"=>"1"}, "commit"=>"Filter"}
+  [1m[36mSale Load (1.0ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (104.1ms)
+Completed 200 OK in 127.0ms (Views: 113.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:49 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:49 -0400
+Served asset /sales.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:47:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:50 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:50 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:47:50 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&ratings%5BMansoura%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"Mansoura"=>"1"}, "commit"=>"Filter"}
+  [1m[35mSale Load (0.8ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (124.7ms)
+Completed 200 OK in 153.1ms (Views: 133.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /sales.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:48:02 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (3.9ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (193.7ms)
+Completed 200 OK in 234.9ms (Views: 213.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /sales.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:21 -0400
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&ratings%5BAswan%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:49:26 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"Aswan"=>"1"}, "commit"=>"Filter"}
+  [1m[35mSale Load (6.4ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (139.4ms)
+Completed 200 OK in 172.1ms (Views: 152.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /sales.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:27 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/sales/1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Processing by SalesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSale Load (4.8ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered sales/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17.9ms (Views: 10.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /sales.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:49:34 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (6.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (110.6ms)
+Completed 200 OK in 150.7ms (Views: 126.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:35 -0400
+Served asset /sales.js - 304 Not Modified (4ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&ratings%5BAlex%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:50:38 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"Alex"=>"1"}, "commit"=>"Filter"}
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 107.7ms (Views: 92.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /sales.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:39 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&ratings%5BAswan%5D=1&ratings%5BAlex%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"Aswan"=>"1", "Alex"=>"1"}, "commit"=>"Filter"}
+  [1m[35mSale Load (0.8ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (164.8ms)
+Completed 200 OK in 183.4ms (Views: 169.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:50:46 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (132.0ms)
+Completed 200 OK in 150.5ms (Views: 145.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /sales.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /sales.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:51:42 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAlex%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:51:47 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Alex"=>"1"}, "commit"=>"Filter"}
+Completed 500 Internal Server Error in 1.4ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xa8f66dc>):
+  app/controllers/sales_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (181.1ms)
+Completed 200 OK in 195.2ms (Views: 186.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:23 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:52:25 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (129.4ms)
+Completed 200 OK in 154.2ms (Views: 135.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /jquery.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:26 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (0.8ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (182.2ms)
+Completed 200 OK in 200.2ms (Views: 187.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:39 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (5.9ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (87.4ms)
+Completed 200 OK in 110.1ms (Views: 100.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /sales.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:52:40 -0400
+Served asset /sales.js - 304 Not Modified (3ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAswan%5D=true&commit=Filter" for 127.0.0.1 at 2015-01-11 14:52:48 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Aswan"=>"true"}, "commit"=>"Filter"}
+Completed 500 Internal Server Error in 1.2ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xb5708acc>):
+  app/controllers/sales_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (156.1ms)
+Completed 200 OK in 187.4ms (Views: 163.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:07 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:08 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAlex%5D=%7B%3Aid%3D%3E%22cities_Alex%22%7D&commit=Filter" for 127.0.0.1 at 2015-01-11 14:53:10 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Alex"=>"{:id=>\"cities_Alex\"}"}, "commit"=>"Filter"}
+Completed 500 Internal Server Error in 1.4ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xb62a9138>):
+  app/controllers/sales_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:53:51 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (133.9ms)
+Completed 200 OK in 149.7ms (Views: 139.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:51 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /sales.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:52 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (3.9ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (109.6ms)
+Completed 200 OK in 133.9ms (Views: 119.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /jquery.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:53:55 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (1.1ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (108.7ms)
+Completed 200 OK in 146.2ms (Views: 118.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /sales.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:54:57 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Aswan%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:55:01 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Aswan\"}"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 150.1ms (Views: 134.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:02 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 14:55:29 -0400
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 166.3ms (Views: 143.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:30 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&commit=Filter" for 127.0.0.1 at 2015-01-11 14:55:31 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Filter"}
+  [1m[35mSale Load (4.9ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (193.5ms)
+Completed 200 OK in 220.5ms (Views: 207.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /sales.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /sales.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:55:32 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAlex%5D=%7B%3Aid%3D%3E%22cities_Alex%22%7D&commit=Filter" for 127.0.0.1 at 2015-01-11 14:55:34 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Alex"=>"{:id=>\"cities_Alex\"}"}, "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+Completed 500 Internal Server Error in 1.3ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xb586b978>):
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&commit=Filter" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Filter"}
+  [1m[36mSale Load (4.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (128.2ms)
+Completed 200 OK in 152.0ms (Views: 140.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:02 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:57:06 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (0.8ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (125.3ms)
+Completed 200 OK in 144.3ms (Views: 133.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /sales.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (99.8ms)
+Completed 200 OK in 122.1ms (Views: 105.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /sales.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 14:57:28 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAlex%5D=%7B%3Aid%3D%3E%22cities_Alex%22%7D&commit=Filter" for 127.0.0.1 at 2015-01-11 14:57:31 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Alex"=>"{:id=>\"cities_Alex\"}"}, "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+Completed 500 Internal Server Error in 1.4ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xafac4cc>):
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities%5BAlex%5D=%7B%3Aid%3D%3E%22cities_Alex%22%7D&commit=Filter" for 127.0.0.1 at 2015-01-11 14:58:36 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities"=>{"Alex"=>"{:id=>\"cities_Alex\"}"}, "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+Completed 500 Internal Server Error in 65.1ms
+
+NoMethodError (undefined method `filter_by_city' for #<SalesController:0xb646380c>):
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/sales" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Processing by SalesController#index as HTML
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (119.4ms)
+Completed 200 OK in 138.2ms (Views: 127.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_%5BCairo%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_"=>{"Cairo"=>"1"}, "commit"=>"Filter"}
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 106.3ms (Views: 93.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /sales.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:01:07 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_%5BCairo%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:01:43 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_"=>{"Cairo"=>"1"}, "commit"=>"Filter"}
+  [1m[35mSale Load (0.9ms)[0m  SELECT "sales".* FROM "sales" 
+ERROR: compiling _app_views_sales_index_html_erb___178385288_84021060 RAISED /home/saasbook/final/app/views/sales/index.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+... check_box_tag ":id => "cities_#{city}" );@output_buffer.saf...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...er.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...'Filter', :id => 'Filter_submit' );@output_buffer.safe_conca...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:13: syntax error, unexpected '<', expecting ')'
+<table>
+ ^
+/home/saasbook/final/app/views/sales/index.html.erb:16: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:17: syntax error, unexpected '<'
+    <th>Date</th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:18: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:19: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:20: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:21: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:22: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:26: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:27: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:28: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:29: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.append= ( link_to 'Show', sale );@output_buffer.safe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:31: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Destroy', sale, method: :delete, dat...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+... :delete, data: { confirm: 'Are you sure?' } );@output_buffe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:33: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:39: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to 'New Sale', new_sale_path );@outp...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:40: unterminated string meets end of file
+/home/saasbook/final/app/views/sales/index.html.erb:40: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_sales_index_html_erb___178385288_84021060(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "sales/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing sales</h1>
+
+');@output_buffer.append=  form_tag sales_path, :id => 'Filter_form', :method => :get do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  Include:
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+@output_buffer.safe_concat('    ');@output_buffer.append= ( city );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( check_box_tag ":id => "cities_#{city}" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+<table>
+  <tr>
+    <th>Good</th>
+    <th>Price</th>
+    <th>Date</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+'); @sales.each do |sale| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( sale.good );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.date );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Show', sale );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Sale', new_sale_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:297:in `module_eval'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:297:in `compile'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:232:in `compile!'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:144:in `block in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:125:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:143:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:88:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/saasbook/final/app/controllers/sales_controller.rb:11:in `index'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/base.rb:167:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:414:in `_run__767088337__process_action__313159587__callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/base.rb:121:in `process'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:45:in `process'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal.rb:203:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal.rb:246:in `block in action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/query_cache.rb:64:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `_run__733596386__call__229843385__callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered sales/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 21.6ms
+
+ActionView::Template::Error (/home/saasbook/final/app/views/sales/index.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+... check_box_tag ":id => "cities_#{city}" );@output_buffer.saf...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...er.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...'Filter', :id => 'Filter_submit' );@output_buffer.safe_conca...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:13: syntax error, unexpected '<', expecting ')'
+<table>
+ ^
+/home/saasbook/final/app/views/sales/index.html.erb:16: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:17: syntax error, unexpected '<'
+    <th>Date</th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:18: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:19: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:20: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:21: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:22: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:26: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:27: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:28: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:29: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.append= ( link_to 'Show', sale );@output_buffer.safe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:31: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Destroy', sale, method: :delete, dat...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+... :delete, data: { confirm: 'Are you sure?' } );@output_buffe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:33: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:39: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to 'New Sale', new_sale_path );@outp...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:40: unterminated string meets end of file
+/home/saasbook/final/app/views/sales/index.html.erb:40: syntax error, unexpected $end, expecting ')'):
+    4:   Include:
+    5:   <% ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag ":id => "cities_#{city}" %>
+    8: 
+    9:   <% end %>
+    10:   <%= submit_tag 'Filter', :id => 'Filter_submit' %>
+  app/controllers/sales_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.2ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_%5BCairo%5D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_"=>{"Cairo"=>"1"}, "commit"=>"Filter"}
+  [1m[36mSale Load (4.5ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 108.0ms (Views: 99.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:02:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:02:10 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:02:10 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (1.0ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (117.8ms)
+Completed 200 OK in 137.6ms (Views: 123.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:05:00 -0400
+Served asset /sales.js - 304 Not Modified (2ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Aid%3D%3E%22cities_Alex%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:06:05 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:id=>\"cities_Alex\"}"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (82.1ms)
+Completed 200 OK in 103.1ms (Views: 91.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /sales.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:06 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&%7B%3Acities%3D%3E%22cities_Cairo%22%7D=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:06:23 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "{:cities=>\"cities_Cairo\"}"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (133.3ms)
+Completed 200 OK in 151.0ms (Views: 138.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /scaffolds.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /sales.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:24 -0400
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Cairo"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 107.7ms (Views: 92.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /sales.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:40 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Mansoura=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Mansoura"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (1.4ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (86.3ms)
+Completed 200 OK in 101.8ms (Views: 90.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /sales.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /sales.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:06:58 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:07:30 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Cairo"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (0.7ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (60.6ms)
+Completed 500 Internal Server Error in 78.3ms
+
+ActionView::Template::Error (undefined local variable or method `cities' for #<#<Class:0xae84bbc>:0xa3b3238>):
+    4:   Include:
+    5:   <% ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag cities => "cities_#{city}" %>
+    8: 
+    9:   <% end %>
+    10:   <%= submit_tag 'Filter', :id => 'Filter_submit' %>
+  app/views/sales/index.html.erb:7:in `block (2 levels) in _app_views_sales_index_html_erb___178385288_85823560'
+  app/views/sales/index.html.erb:5:in `each'
+  app/views/sales/index.html.erb:5:in `block in _app_views_sales_index_html_erb___178385288_85823560'
+  app/views/sales/index.html.erb:3:in `_app_views_sales_index_html_erb___178385288_85823560'
+  app/controllers/sales_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:08:28 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Cairo"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (1.0ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (110.5ms)
+Completed 500 Internal Server Error in 152.5ms
+
+ActionView::Template::Error (undefined local variable or method `cities' for #<#<Class:0xb5d02bd0>:0xb5d01654>):
+    4:   Include:
+    5:   <% ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag cities => "cities_#{city}" %>
+    8: 
+    9:   <% end %>
+    10:   <%= submit_tag 'Filter', :id => 'Filter_submit' %>
+  app/views/sales/index.html.erb:7:in `block (2 levels) in _app_views_sales_index_html_erb___178385288_85823560'
+  app/views/sales/index.html.erb:5:in `each'
+  app/views/sales/index.html.erb:5:in `block in _app_views_sales_index_html_erb___178385288_85823560'
+  app/views/sales/index.html.erb:3:in `_app_views_sales_index_html_erb___178385288_85823560'
+  app/controllers/sales_controller.rb:12:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.6ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:09:21 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Cairo"=>"1", "commit"=>"Filter"}
+  [1m[36mSale Load (1.0ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (50.0ms)
+Completed 500 Internal Server Error in 66.7ms
+
+ActionView::Template::Error (undefined local variable or method `cities' for #<#<Class:0xa44ddec>:0x999d4ec>):
+    4:   Include:
+    5:   <% ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag cities["cities_#{city}"] %>
+    8: 
+    9:   <% end %>
+    10:   <%= submit_tag 'Filter', :id => 'Filter_submit' %>
+  app/views/sales/index.html.erb:7:in `block (2 levels) in _app_views_sales_index_html_erb___178385288_80536270'
+  app/views/sales/index.html.erb:5:in `each'
+  app/views/sales/index.html.erb:5:in `block in _app_views_sales_index_html_erb___178385288_80536270'
+  app/views/sales/index.html.erb:3:in `_app_views_sales_index_html_erb___178385288_80536270'
+  app/controllers/sales_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.2ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&cities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "cities_Cairo"=>"1", "commit"=>"Filter"}
+  [1m[35mSale Load (0.8ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 113.3ms (Views: 97.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /sales.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /sales.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:11:36 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&Cairocities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "Cairocities_Cairo"=>"1", "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36mSale Load (5.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 132.1ms (Views: 85.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /sales.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:12:14 -0400
+Served asset /sales.js - 304 Not Modified (7ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&Cairocities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:12:49 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "Cairocities_Cairo"=>"1", "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35mSale Load (2.9ms)[0m  SELECT "sales".* FROM "sales" 
+ERROR: compiling _app_views_sales_index_html_erb___178385288__624790428 RAISED /home/saasbook/final/app/views/sales/index.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+');@output_buffer.safe_concat('  Include:
+                                        ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+             ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                     ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                              ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                                          ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting keyword_end
+...er.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting keyword_end
+...'Filter', :id => 'Filter_submit' );@output_buffer.safe_conca...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:13: syntax error, unexpected '<', expecting keyword_end
+<table>
+ ^
+/home/saasbook/final/app/views/sales/index.html.erb:16: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:17: syntax error, unexpected '<'
+    <th>Date</th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:18: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:19: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:20: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:21: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:22: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:26: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:27: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:28: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:29: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting keyword_end
+..._buffer.append= ( link_to 'Show', sale );@output_buffer.safe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:31: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+...ffer.append= ( link_to 'Destroy', sale, method: :delete, dat...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+... :delete, data: { confirm: 'Are you sure?' } );@output_buffe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:33: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:39: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append= ( link_to 'New Sale', new_sale_path );@outp...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:40: unterminated string meets end of file
+/home/saasbook/final/app/views/sales/index.html.erb:40: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_sales_index_html_erb___178385288__624790428(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "sales/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing sales</h1>
+
+');@output_buffer.append=  form_tag sales_path#index, :id => 'Filter_form', :method => :get do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  Include:
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+@output_buffer.safe_concat('    ');@output_buffer.append= ( city );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( check_box_tag "#{city}" "cities_#{city}" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');   end 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+<table>
+  <tr>
+    <th>Good</th>
+    <th>Price</th>
+    <th>Date</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+'); @sales.each do |sale| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( sale.good );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.date );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Show', sale );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Sale', new_sale_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:297:in `module_eval'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:297:in `compile'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:232:in `compile!'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:144:in `block in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:125:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/template.rb:143:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:88:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/saasbook/final/app/controllers/sales_controller.rb:11:in `index'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/base.rb:167:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:414:in `_run__767088337__process_action__313159587__callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/notifications.rb:123:in `instrument'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/base.rb:121:in `process'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/abstract_controller/rendering.rb:45:in `process'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal.rb:203:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_controller/metal.rb:246:in `block in action'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/query_cache.rb:64:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.16/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `_run__733596386__call__229843385__callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered sales/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 20.3ms
+
+ActionView::Template::Error (/home/saasbook/final/app/views/sales/index.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+');@output_buffer.safe_concat('  Include:
+                                        ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+             ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                     ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                              ^
+/home/saasbook/final/app/views/sales/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_end
+');   ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| 
+                                          ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting keyword_end
+...er.append= ( submit_tag 'Filter', :id => 'Filter_submit' );@...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:10: syntax error, unexpected tCONSTANT, expecting keyword_end
+...'Filter', :id => 'Filter_submit' );@output_buffer.safe_conca...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:13: syntax error, unexpected '<', expecting keyword_end
+<table>
+ ^
+/home/saasbook/final/app/views/sales/index.html.erb:16: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:17: syntax error, unexpected '<'
+    <th>Date</th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:18: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:19: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:20: unknown regexp options - th
+/home/saasbook/final/app/views/sales/index.html.erb:21: syntax error, unexpected '<'
+    <th></th>
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:22: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:26: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:27: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.price );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:28: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:29: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( sale.city );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting keyword_end
+..._buffer.append= ( link_to 'Show', sale );@output_buffer.safe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:31: unknown regexp options - td
+unmatched close parenthesis: /td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_sale_path(sale) );@output_buffer.safe_concat('</
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected '<'
+    <td>');@output_buffer.append= ...
+     ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+...ffer.append= ( link_to 'Destroy', sale, method: :delete, dat...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+... :delete, data: { confirm: 'Are you sure?' } );@output_buffe...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:33: unknown regexp options - tr
+/home/saasbook/final/app/views/sales/index.html.erb:39: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append= ( link_to 'New Sale', new_sale_path );@outp...
+...                               ^
+/home/saasbook/final/app/views/sales/index.html.erb:40: unterminated string meets end of file
+/home/saasbook/final/app/views/sales/index.html.erb:40: syntax error, unexpected $end, expecting keyword_end):
+    1: <h1>Listing sales</h1>
+    2: 
+    3: <%= form_tag sales_path#index, :id => 'Filter_form', :method => :get do %>
+    4:   Include:
+    5:   <% ['Aswan', 'Alex', 'Cairo', 'Mansoura'].each do |city| %>
+    6:     <%= city %>
+    7:     <%= check_box_tag "#{city}" "cities_#{city}" %>
+  app/controllers/sales_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sales?utf8=%E2%9C%93&Cairocities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:14:16 -0400
+Connecting to database specified by database.yml
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "Cairocities_Cairo"=>"1", "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[36mSale Load (1.1ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (193.6ms)
+Completed 200 OK in 518.9ms (Views: 423.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /sales.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /sales.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:18 -0400
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/sales?utf8=%E2%9C%93&Cairocities_Cairo=1&commit=Filter" for 127.0.0.1 at 2015-01-11 15:14:26 -0400
+Processing by SalesController#index as HTML
+  Parameters: {"utf8"=>"✓", "Cairocities_Cairo"=>"1", "commit"=>"Filter"}
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  Rendered sales/index.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 139.3ms (Views: 128.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /sales.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2015-01-11 15:14:27 -0400
+Served asset /sales.js - 304 Not Modified (0ms)
